@@ -30,12 +30,4 @@ class QueryProcessorTest {
 		}
 	}
 
-	@Test
-	void isCaseSensitive() {
-		String actual = queryProcessor.process("shakespeare");
-		if (actual.contains("playwright")) {
-			fail("Your QueryProcessor should not be case sensitive.");
-		}
-	}
-
 }
